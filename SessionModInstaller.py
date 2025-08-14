@@ -1,6 +1,6 @@
 ###########################################################################################################################################################
 # The tools are completely safe. On the front page, ive made a spreadsheet explaining every tool and where it originate from.
-# Please make sure you got this from GitHub, or any trusted source listed on the Front page spreadsheet.
+# Please make sure you got this from GitHub, or any trusted source listed on the trusted source spreadsheet.
 # Enjoy this project and the updates that comes with it since its my first ever python project (sucks xD) and may look sloppy.
 # - jc
 ###########################################################################################################################################################
@@ -11,30 +11,16 @@ import os # comes with python
 import time # comes with python
 import art # https://pypi.org/project/art/
 from art import * # https://pypi.org/project/art/
-import requests
-import shutil
-import colorama
-from colorama import Fore, Style, init
-init() # for colorama
-import subprocess
-from os import system
-import webbrowser
-import auto_py_to_exe
-import sys
-
-
-
-
-# Beginning
-
-#os.system("title SessionModInstaller") # title of program
-#os.system("mode 150, 43") # pretty much only for windows 10 (i think.....)
-#os.system("cls") # clearing screen
-#tprint("Session Mod Installer") # makes cool art
-#tprint("Created by jcxeq", font="small")
-#print("\nThank you for support my program\nMany updates/improvements to come in my coding journey!")
-#time.sleep(2)
-#os.system("cls") # clearing screen # clearing screen
+import requests # https://pypi.org/project/requests/
+import shutil # comes with python
+import colorama # https://pypi.org/project/colorama/
+from colorama import Fore, Style, init # https://pypi.org/project/colorama/
+init() # for colorama # https://pypi.org/project/colorama/
+import subprocess # comes with python
+from os import system # comes with python
+import webbrowser # comes with python
+import auto_py_to_exe # https://pypi.org/project/auto-py-to-exe/
+import sys # comes with python
 
 
 # Intro
@@ -60,13 +46,14 @@ sk8 = print(" ") # empty space 0u0
 sk8 = print("_______________________________________________________________________________________________________")
 picking = input(Fore.GREEN + "\n>: " + Style.RESET_ALL)
 
-        # directorys    
+        # directorys   
+ 
 UMI = "C:\\SessionModInstaller\\Tools\\Minimal\\UnrealModUnlocker\\Unreal Mod Unlocker Basic.exe" # program location (dont rename/change!)
 SMM = "C:\\SessionModInstaller\\Tools\\Minimal\\Session Mod Manager\\SessionModManager.exe" # program location (dont rename/change!)
 UMIR = "C:\\SessionModInstaller\\Tools\\Recommended\\UnrealModUnlocker\\Unreal Mod Unlocker Basic.exe" # program location (dont rename/change!)
 SMMR = "C:\\SessionModInstaller\\Tools\\Recommended\\Session Mod Manager\\SessionModManager.exe" # program location (dont rename/change!)
 RST = "C:\\SessionModInstaller\\RUN.bat"
-SMP = "C:\\SessionModInstaller\\Tools\\SSMI.bat"
+SMP = "C:\\SessionModInstaller\\Tools\\SMP.bat"
 
         # end of directorys
 
@@ -111,8 +98,9 @@ if picking == "s": # minimal tools needed for session mods
 
                 os.system("cls") # clearing screen
                 tprint("Session Mod Installer") # makes cool art
-                print(Fore.GREEN + "\nFinished with minimal installation!" + Style.RESET_ALL)
+                print(Fore.GREEN + "\nFinished with recommended installation!" + Style.RESET_ALL)
                 close = input("\nWould like to close the program or continue?: ")
+                print("\nY = Yes -- N = No")
                 if close == "y":
                         sys.exit(0)
                 elif close == "n":
@@ -157,6 +145,7 @@ if picking == "k": # recommended tools needed for session mods
                 tprint("Session Mod Installer") # makes cool art
                 print(Fore.GREEN + "\nFinished with recommended installation!" + Style.RESET_ALL)
                 close = input("\nWould like to close the program or continue?: ")
+                print("\nY = Yes -- N = No")
                 if close == "y":
                         sys.exit(0)
                 elif close == "n":
@@ -174,11 +163,11 @@ if picking == "p2":
                 print(" ") # empty space 0u0
                 sk8 = print("_______________________________________________________________________________________________________")
                 sk8 = print(" ") # empty space 0u0
-                sk8 = print("    Page 2")
+                sk8 = print("    Misc")
                 print(" ") # empty space 0u0
                 sk8 = print("_______________________________________________________________________________________________________")
                 print(" ") # empty space 0u0
-                sk8 = print("[LMP] -- Load SMP")
+                sk8 = print("[LS] -- Load SMP")
                 sk8 = print("[L?] -- [soon]                                                                                                       [P1] -- Page 1")
                 sk8 = print("[L?] -- [soon]                                                                                                       [?]  - Help")
                 sk8 = print("[L?] -- [soon]                  ")
@@ -187,8 +176,30 @@ if picking == "p2":
                 sk8 = print("_______________________________________________________________________________________________________")
                 pickingg = input(Fore.GREEN + "\n>: " + Style.RESET_ALL)
 
+if pickingg == "?":
+        helpme = "https://github.com/Jcxeq/SessionModInstaller/issues"
+        RST = "C:\\SessionModInstaller\\RUN.bat"
+        webbrowser.open(helpme)
+        subprocess.run([RST])
+
+
+
 if pickingg == "p1":
         subprocess.run([RST])
+
+
+
+if pickingg == "ls":
+        os.system("cls") # clearing screen
+        tprint("Session Mod Installer") # makes cool art
+        print(" ") # empty space 0u0
+        print(Fore.YELLOW + "Currently working in progress..." + Style.RESET_ALL)
+        time.sleep(2)
+        os.system("cls") # clearing screen
+        
+
+
+
 
 
 # end of pages
@@ -200,5 +211,13 @@ else:
                 tprint("Session Mod Installer") # makes cool art
                 print(Fore.RED + "Error!, Restarting..." + Style.RESET_ALL)
                 time.sleep(2)
-                os.system("cls") # clearing screen # clearing screeN
+                os.system("cls") # clearing screen
                 subprocess.run([RST])
+
+
+
+
+
+
+
+# end
