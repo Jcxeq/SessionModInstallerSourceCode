@@ -33,12 +33,12 @@ sk8 = print(" ") # empty space 0u0
 print(" ") # empty space 0u0
 sk8 = print("_______________________________________________________________________________________________________")
 sk8 = print(" ") # empty space 0u0
-sk8 = print("    Installation Presets")
+sk8 = print("    Presets")
 print(" ") # empty space 0u0
 sk8 = print("_______________________________________________________________________________________________________")
 print(" ") # empty space 0u0
 sk8 = print("[S] -- Minimal Installation")
-sk8 = print("[K] -- Recommended Installation                                                                                     [P2] -- Page 2")
+sk8 = print("[K] -- Recommended Installation                                                                                     [M] -- Misc")
 sk8 = print("[A] -- Content Creator Installation                                                                                 [?]  - Help")
 sk8 = print("[T] -- [soon]                  ")
 sk8 = print("[E] -- [soon]                  ")
@@ -197,7 +197,7 @@ if picking == "a": # content creator tools needed for session mods
 
 # Page 2
 
-if picking == "p2":
+if picking == "m":
                 os.system("cls") # clearing screen
                 tprint("Session Mod Installer") # makes cool art
                 #tprint("Created by jcxeq", font="small")
@@ -221,7 +221,6 @@ if picking == "p2":
 
 if pickingg == "?":
         helpme = "https://github.com/Jcxeq/SessionModInstaller/issues"
-        RST = "C:\\SessionModInstaller\\RUN.bat"
         webbrowser.open(helpme)
         subprocess.run([RST])
 
@@ -239,17 +238,17 @@ if pickingg == "ls":
         print(Fore.YELLOW + "Currently working in progress..." + Style.RESET_ALL)
         time.sleep(2)
         os.system("cls") # clearing screen
+        subprocess.run([RST])
 
 
 if pickingg == "ld":
-        SMIdiscord = "https://github.com/Jcxeq/SessionModInstaller/issues"
-        RST = "C:\\SessionModInstaller\\RUN.bat"
+        SMIdiscord = "https://discord.com/invite/DpRCdwkkX3"
         webbrowser.open(SMIdiscord)
         subprocess.run([RST])
 
 
 
-# end of pages
+# end of pagesgggg
 
 
 
